@@ -1,1 +1,2856 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A&N Contractors Private Limited | Lahore</title>
+
+    <meta name="description"
+        content="A&N Contractors Private Limited is a professional contracting and construction company based in Lahore, Pakistan.">
+
+    <meta name="keywords"
+        content="A&N Contractors, Contractors Lahore, Construction Company Lahore, Pakistan Contractors">
+
+    <meta name="author" content="A&N Contractors Private Limited">
+
+    <style>
+
+        /* =====================================================
+           GLOBAL
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --primary: #0b4f71;
+            --primary-dark: #07354c;
+            --secondary: #f4b400;
+            --dark: #101820;
+            --text: #53616b;
+            --light: #f6f9fb;
+            --white: #ffffff;
+            --border: #e5ebef;
+            --shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--dark);
+            background: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button,
+        input,
+        textarea {
+            font-family: inherit;
+        }
+
+        .container {
+            width: min(1150px, 92%);
+            margin: auto;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-light {
+            background: var(--light);
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .section-heading .small-title {
+            color: var(--secondary);
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .section-heading h2 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 18px;
+        }
+
+        .section-heading p {
+            color: var(--text);
+            font-size: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 25px;
+            border-radius: 5px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--secondary);
+            color: #111;
+        }
+
+        .btn-primary:hover {
+            background: #d99e00;
+            transform: translateY(-2px);
+        }
+
+        .btn-dark {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-dark:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           TOP BAR
+        ===================================================== */
+
+        .topbar {
+            background: var(--primary-dark);
+            color: white;
+            font-size: 13px;
+        }
+
+        .topbar-content {
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .top-info {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .top-info span {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .top-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .top-social a {
+            opacity: 0.85;
+            transition: 0.3s;
+        }
+
+        .top-social a:hover {
+            opacity: 1;
+            color: var(--secondary);
+        }
+
+
+        /* =====================================================
+           NAVBAR
+        ===================================================== */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 17px;
+            position: relative;
+        }
+
+        .logo-icon::after {
+            content: "";
+            position: absolute;
+            width: 11px;
+            height: 11px;
+            background: var(--secondary);
+            border-radius: 50%;
+            top: 5px;
+            right: 5px;
+        }
+
+        .logo-text strong {
+            display: block;
+            font-size: 17px;
+            color: var(--primary);
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 10px;
+            color: var(--text);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 700;
+            color: #25343e;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-contact {
+            background: var(--primary);
+            color: white !important;
+            padding: 11px 18px;
+            border-radius: 5px;
+        }
+
+        .nav-contact::after {
+            display: none;
+        }
+
+        .menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 27px;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            min-height: 700px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(90deg,
+                    rgba(4, 37, 53, 0.96) 0%,
+                    rgba(7, 58, 80, 0.88) 48%,
+                    rgba(7, 58, 80, 0.45) 100%),
+                linear-gradient(135deg, #0b4f71, #082f42);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 50%;
+            right: -200px;
+            top: -100px;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            border: 1px solid rgba(244,180,0,0.2);
+            border-radius: 50%;
+            right: 100px;
+            bottom: -180px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 720px;
+            color: white;
+        }
+
+        .hero-label {
+            display: inline-block;
+            color: var(--secondary);
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1.08;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: var(--secondary);
+        }
+
+        .hero p {
+            color: rgba(255,255,255,0.82);
+            font-size: 18px;
+            max-width: 650px;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255,255,255,0.5);
+            color: white;
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        .hero-badge {
+            position: absolute;
+            z-index: 3;
+            right: 7%;
+            bottom: 70px;
+            background: white;
+            width: 190px;
+            padding: 22px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .hero-badge strong {
+            display: block;
+            font-size: 30px;
+            color: var(--primary);
+        }
+
+        .hero-badge span {
+            font-size: 13px;
+            color: var(--text);
+        }
+
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-visual {
+            min-height: 470px;
+            border-radius: 12px;
+            background:
+                linear-gradient(rgba(7, 61, 84, 0.78), rgba(7, 61, 84, 0.9)),
+                repeating-linear-gradient(
+                    45deg,
+                    #0b4f71 0px,
+                    #0b4f71 12px,
+                    #073b55 12px,
+                    #073b55 24px
+                );
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .building-shape {
+            width: 240px;
+            height: 320px;
+            border: 8px solid rgba(255,255,255,0.18);
+            position: relative;
+        }
+
+        .building-shape::before,
+        .building-shape::after {
+            content: "";
+            position: absolute;
+            left: 30px;
+            right: 30px;
+            height: 35px;
+            border-top: 7px solid rgba(255,255,255,0.18);
+            border-bottom: 7px solid rgba(255,255,255,0.18);
+        }
+
+        .building-shape::before {
+            top: 60px;
+        }
+
+        .building-shape::after {
+            bottom: 60px;
+        }
+
+        .about-card {
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .about-card strong {
+            font-size: 28px;
+            color: var(--primary);
+        }
+
+        .about-card span {
+            display: block;
+            font-size: 12px;
+            color: var(--text);
+        }
+
+        .about-content .small-title {
+            color: var(--secondary);
+            font-weight: 800;
+            letter-spacing: 2px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .about-content h2 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin: 12px 0 20px;
+        }
+
+        .about-content p {
+            color: var(--text);
+            margin-bottom: 18px;
+        }
+
+        .check-list {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .check-list li {
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: var(--secondary);
+            font-weight: 900;
+            margin-right: 10px;
+        }
+
+
+        /* =====================================================
+           SERVICES
+        ===================================================== */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 35px 28px;
+            border-radius: 9px;
+            transition: 0.35s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+            border-color: transparent;
+        }
+
+        .service-icon {
+            width: 62px;
+            height: 62px;
+            border-radius: 8px;
+            background: #eaf4f8;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 27px;
+            margin-bottom: 22px;
+        }
+
+        .service-card h3 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: var(--text);
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           STATS
+        ===================================================== */
+
+        .stats {
+            background: var(--primary);
+            color: white;
+            padding: 65px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            text-align: center;
+        }
+
+        .stat {
+            border-right: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .stat:last-child {
+            border: none;
+        }
+
+        .stat-number {
+            font-size: 42px;
+            font-weight: 900;
+            color: var(--secondary);
+        }
+
+        .stat p {
+            color: rgba(255,255,255,0.75);
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           PROJECTS
+        ===================================================== */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow);
+        }
+
+        .project-image {
+            height: 230px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            background:
+                linear-gradient(rgba(7,60,82,0.78), rgba(7,60,82,0.78)),
+                repeating-linear-gradient(
+                    135deg,
+                    #78909c 0px,
+                    #78909c 20px,
+                    #607d8b 20px,
+                    #607d8b 40px
+                );
+        }
+
+        .project-card:nth-child(2) .project-image {
+            background:
+                linear-gradient(rgba(7,60,82,0.78), rgba(7,60,82,0.78)),
+                repeating-linear-gradient(
+                    45deg,
+                    #9e9e9e 0px,
+                    #9e9e9e 20px,
+                    #757575 20px,
+                    #757575 40px
+                );
+        }
+
+        .project-card:nth-child(3) .project-image {
+            background:
+                linear-gradient(rgba(7,60,82,0.78), rgba(7,60,82,0.78)),
+                repeating-linear-gradient(
+                    90deg,
+                    #90a4ae 0px,
+                    #90a4ae 25px,
+                    #546e7a 25px,
+                    #546e7a 50px
+                );
+        }
+
+        .project-info {
+            padding: 25px;
+        }
+
+        .project-info small {
+            color: var(--secondary);
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .project-info h3 {
+            margin: 7px 0;
+            font-size: 20px;
+        }
+
+        .project-info p {
+            color: var(--text);
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           WHY US
+        ===================================================== */
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .why-content h2 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .why-content > p {
+            color: var(--text);
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 25px;
+        }
+
+        .feature-icon {
+            flex-shrink: 0;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: #eaf4f8;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 21px;
+        }
+
+        .feature h3 {
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+
+        .feature p {
+            color: var(--text);
+            font-size: 14px;
+        }
+
+        .why-box {
+            min-height: 470px;
+            border-radius: 12px;
+            background: var(--primary-dark);
+            padding: 45px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-box::before {
+            content: "";
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            border: 1px solid rgba(244,180,0,0.3);
+            border-radius: 50%;
+            right: -120px;
+            top: -100px;
+        }
+
+        .why-box h3 {
+            font-size: 30px;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 25px;
+        }
+
+        .why-box ul {
+            list-style: none;
+            position: relative;
+            z-index: 2;
+        }
+
+        .why-box li {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+        }
+
+        .why-box li::before {
+            content: "◆";
+            color: var(--secondary);
+            margin-right: 12px;
+            font-size: 10px;
+        }
+
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .cta {
+            background:
+                linear-gradient(90deg, rgba(5,39,54,0.97), rgba(11,79,113,0.94));
+            padding: 80px 0;
+            color: white;
+        }
+
+        .cta-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .cta h2 {
+            font-size: 38px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .cta p {
+            color: rgba(255,255,255,0.75);
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        .faq-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .faq-item {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            border: none;
+            background: white;
+            padding: 20px;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .faq-question span {
+            font-size: 24px;
+            color: var(--primary);
+            transition: 0.3s;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+
+        .faq-answer p {
+            padding: 0 20px 20px;
+            color: var(--text);
+            font-size: 14px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+
+        .faq-item.active .faq-question span {
+            transform: rotate(45deg);
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 40px;
+        }
+
+        .contact-info {
+            background: var(--primary-dark);
+            padding: 45px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .contact-info h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info > p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            flex-shrink: 0;
+            border-radius: 6px;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .contact-item span,
+        .contact-item a {
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        .contact-form h3 {
+            font-size: 27px;
+            margin-bottom: 25px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            border: 1px solid var(--border);
+            padding: 13px 14px;
+            border-radius: 5px;
+            outline: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .form-group textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(11,79,113,0.08);
+        }
+
+        .form-message {
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 700;
+            display: none;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: #071b26;
+            color: white;
+            padding-top: 65px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 50px;
+        }
+
+        .footer-logo {
+            margin-bottom: 18px;
+        }
+
+        .footer-about p {
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+            max-width: 330px;
+        }
+
+        .footer-col h3 {
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 11px;
+        }
+
+        .footer-col a {
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: var(--secondary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           WHATSAPP
+        ===================================================== */
+
+        .whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+
+        /* =====================================================
+           BACK TO TOP
+        ===================================================== */
+
+        .back-top {
+            position: fixed;
+            right: 22px;
+            bottom: 90px;
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 5px;
+            background: var(--primary);
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            z-index: 998;
+        }
+
+        .back-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* =====================================================
+           ANIMATION
+        ===================================================== */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                position: absolute;
+                top: 78px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 25px 5%;
+                gap: 20px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+
+                transform: translateY(-150%);
+                transition: 0.35s;
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .about-grid,
+            .why-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid,
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stat {
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,0.15);
+                padding-bottom: 20px;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-badge {
+                display: none;
+            }
+
+            .cta-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .topbar-content {
+                justify-content: center;
+            }
+
+            .top-social {
+                display: none;
+            }
+
+            .top-info {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .section {
+                padding: 70px 0;
+            }
+
+            .section-heading h2,
+            .about-content h2,
+            .why-content h2 {
+                font-size: 32px;
+            }
+
+            .hero {
+                min-height: 650px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .services-grid,
+            .projects-grid,
+            .stats-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .contact-form,
+            .contact-info {
+                padding: 28px 22px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            .about-visual {
+                min-height: 380px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         TOP BAR
+    ====================================================== -->
+
+    <div class="topbar">
+
+        <div class="container topbar-content">
+
+            <div class="top-info">
+
+                <span>📍 Lahore, Pakistan</span>
+
+                <span>✉ info@ancontractors.com</span>
+
+                <span>☎ +92 XXX XXXXXXX</span>
+
+            </div>
+
+            <div class="top-social">
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header>
+
+        <div class="container navbar">
+
+            <a href="#home" class="logo">
+
+                <div class="logo-icon">
+                    A&N
+                </div>
+
+                <div class="logo-text">
+                    <strong>A&N Contractors</strong>
+                    <span>Private Limited</span>
+                </div>
+
+            </a>
+
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#faq">FAQ</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-contact">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero" id="home">
+
+        <div class="container">
+
+            <div class="hero-content reveal">
+
+                <span class="hero-label">
+                    Professional Contracting Solutions
+                </span>
+
+                <h1>
+                    Building Better.
+                    <span>Building Together.</span>
+                </h1>
+
+                <p>
+                    A&N Contractors Private Limited delivers professional
+                    contracting and construction solutions with a focus on
+                    quality, reliability and long-term value.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#services" class="btn btn-primary">
+                        Explore Services →
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Get In Touch
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-badge">
+
+            <strong>2025</strong>
+
+            <span>
+                Established as a professional business in Lahore
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section class="section" id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-visual reveal">
+
+                <div class="building-shape"></div>
+
+                <div class="about-card">
+
+                    <strong>A&N</strong>
+
+                    <span>
+                        Contractors Private Limited
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content reveal">
+
+                <span class="small-title">
+                    About Our Company
+                </span>
+
+                <h2>
+                    Professional Solutions
+                    Built on Trust
+                </h2>
+
+                <p>
+                    A&N Contractors Private Limited is a Lahore-based
+                    contracting business focused on delivering dependable
+                    professional services to clients and organizations.
+                </p>
+
+                <p>
+                    Our approach combines responsible project management,
+                    attention to quality and a commitment to completing
+                    work according to agreed requirements.
+                </p>
+
+                <ul class="check-list">
+
+                    <li>
+                        Professional project approach
+                    </li>
+
+                    <li>
+                        Quality-focused execution
+                    </li>
+
+                    <li>
+                        Reliable client communication
+                    </li>
+
+                    <li>
+                        Commitment to responsible work
+                    </li>
+
+                </ul>
+
+                <a href="#contact" class="btn btn-dark">
+                    Discuss Your Project →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SERVICES
+    ====================================================== -->
+
+    <section class="section section-light" id="services">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <div class="small-title">
+                    What We Do
+                </div>
+
+                <h2>
+                    Our Professional Services
+                </h2>
+
+                <p>
+                    We provide contracting solutions designed around
+                    project requirements, quality standards and client
+                    expectations.
+                </p>
+
+            </div>
+
+
+            <div class="services-grid">
+
+
+                <div class="service-card reveal">
+
+                    <div class="service-icon">
+                        🏗
+                    </div>
+
+                    <h3>
+                        General Contracting
+                    </h3>
+
+                    <p>
+                        Professional coordination and execution of
+                        contracting work from planning through completion.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card reveal">
+
+                    <div class="service-icon">
+                        🏢
+                    </div>
+
+                    <h3>
+                        Construction Services
+                    </h3>
+
+                    <p>
+                        Construction-related services focused on
+                        dependable execution and practical project
+                        requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card reveal">
+
+                    <div class="service-icon">
+                        📐
+                    </div>
+
+                    <h3>
+                        Project Planning
+                    </h3>
+
+                    <p>
+                        Organized planning and coordination to help
+                        projects move efficiently from concept to delivery.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card reveal">
+
+                    <div class="service-icon">
+                        🔧
+                    </div>
+
+                    <h3>
+                        Maintenance & Repair
+                    </h3>
+
+                    <p>
+                        Maintenance and repair solutions designed to
+                        keep facilities and assets operating effectively.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card reveal">
+
+                    <div class="service-icon">
+                        🧱
+                    </div>
+
+                    <h3>
+                        Civil Works
+                    </h3>
+
+                    <p>
+                        Practical civil work services delivered with
+                        attention to project specifications and quality.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card reveal">
+
+                    <div class="service-icon">
+                        🤝
+                    </div>
+
+                    <h3>
+                        Contract Management
+                    </h3>
+
+                    <p>
+                        Clear communication and organized coordination
+                        throughout the project lifecycle.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         STATS
+    ====================================================== -->
+
+    <section class="stats">
+
+        <div class="container stats-grid">
+
+
+            <div class="stat reveal">
+
+                <div class="stat-number" data-target="1">
+                    0
+                </div>
+
+                <p>
+                    Professional Company
+                </p>
+
+            </div>
+
+
+            <div class="stat reveal">
+
+                <div class="stat-number" data-target="100">
+                    0
+                </div>
+
+                <p>
+                    Commitment %
+                </p>
+
+            </div>
+
+
+            <div class="stat reveal">
+
+                <div class="stat-number" data-target="24">
+                    0
+                </div>
+
+                <p>
+                    Hours Response
+                </p>
+
+            </div>
+
+
+            <div class="stat reveal">
+
+                <div class="stat-number" data-target="1">
+                    0
+                </div>
+
+                <p>
+                    Lahore Office
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROJECTS
+    ====================================================== -->
+
+    <section class="section" id="projects">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <div class="small-title">
+                    Our Work
+                </div>
+
+                <h2>
+                    Project Capabilities
+                </h2>
+
+                <p>
+                    Our services can support a wide range of contracting
+                    and construction requirements.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <div class="project-card reveal">
+
+                    <div class="project-image">
+                        🏗
+                    </div>
+
+                    <div class="project-info">
+
+                        <small>
+                            Construction
+                        </small>
+
+                        <h3>
+                            Building Projects
+                        </h3>
+
+                        <p>
+                            Professional construction support for
+                            commercial and organizational requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card reveal">
+
+                    <div class="project-image">
+                        🏢
+                    </div>
+
+                    <div class="project-info">
+
+                        <small>
+                            Contracting
+                        </small>
+
+                        <h3>
+                            Commercial Works
+                        </h3>
+
+                        <p>
+                            Organized contracting solutions designed
+                            around client specifications.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card reveal">
+
+                    <div class="project-image">
+                        🛠
+                    </div>
+
+                    <div class="project-info">
+
+                        <small>
+                            Services
+                        </small>
+
+                        <h3>
+                            Maintenance Works
+                        </h3>
+
+                        <p>
+                            Practical maintenance and repair services
+                            for facilities and properties.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WHY CHOOSE US
+    ====================================================== -->
+
+    <section class="section section-light">
+
+        <div class="container why-grid">
+
+
+            <div class="why-content reveal">
+
+                <div class="small-title">
+                    Why A&N
+                </div>
+
+                <h2>
+                    A Reliable Partner
+                    for Your Projects
+                </h2>
+
+                <p>
+                    We believe successful projects depend on clear
+                    communication, responsible planning and consistent
+                    attention to quality.
+                </p>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Quality Focus
+                        </h3>
+
+                        <p>
+                            We maintain a quality-oriented approach
+                            throughout project execution.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ⏱
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Reliable Delivery
+                        </h3>
+
+                        <p>
+                            Organized project coordination helps keep
+                            work moving efficiently.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        🤝
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Client Partnership
+                        </h3>
+
+                        <p>
+                            We value transparent communication and
+                            professional relationships.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="why-box reveal">
+
+                <h3>
+                    Our Core Values
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Professionalism
+                    </li>
+
+                    <li>
+                        Quality
+                    </li>
+
+                    <li>
+                        Reliability
+                    </li>
+
+                    <li>
+                        Integrity
+                    </li>
+
+                    <li>
+                        Client Satisfaction
+                    </li>
+
+                    <li>
+                        Responsible Execution
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <section class="cta">
+
+        <div class="container cta-content">
+
+            <div>
+
+                <h2>
+                    Have a Project in Mind?
+                </h2>
+
+                <p>
+                    Let's discuss your requirements and explore how
+                    A&N Contractors can help.
+                </p>
+
+            </div>
+
+            <a href="#contact" class="btn btn-primary">
+                Contact Our Team →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FAQ
+    ====================================================== -->
+
+    <section class="section section-light" id="faq">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <div class="small-title">
+                    FAQ
+                </div>
+
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+
+            </div>
+
+
+            <div class="faq-container">
+
+
+                <div class="faq-item reveal">
+
+                    <button class="faq-question">
+
+                        What services does A&N Contractors provide?
+
+                        <span>+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            A&N Contractors provides professional
+                            contracting, construction, project
+                            coordination, maintenance and related
+                            services.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item reveal">
+
+                    <button class="faq-question">
+
+                        Where is the company located?
+
+                        <span>+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            A&N Contractors Private Limited is based
+                            in Lahore, Punjab, Pakistan.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item reveal">
+
+                    <button class="faq-question">
+
+                        How can I request a project consultation?
+
+                        <span>+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            You can use the contact form on this website
+                            or contact the company directly using the
+                            available phone or email information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item reveal">
+
+                    <button class="faq-question">
+
+                        Can you handle commercial projects?
+
+                        <span>+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. The company can be contacted to discuss
+                            commercial contracting and construction
+                            requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section class="section" id="contact">
+
+        <div class="container contact-grid">
+
+
+            <div class="contact-info reveal">
+
+                <h2>
+                    Let's Talk
+                </h2>
+
+                <p>
+                    Tell us about your project or business requirement.
+                    Our team can discuss the next steps with you.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Office
+                        </strong>
+
+                        <span>
+                            Rajput Tower, 3rd Floor<br>
+                            9 Fan Road, Lahore 54000<br>
+                            Pakistan
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+              
+
+
+        
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        🕘
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Working Hours
+                        </strong>
+
+                        <span>
+                            Monday - Saturday<br>
+                            9:00 AM - 6:00 PM
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="contact-form reveal">
+
+                <h3>
+                    Send Us a Message
+                </h3>
+
+                <form id="contactForm">
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Full Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Email *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Your email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Phone
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="Your phone number"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Service
+                            </label>
+
+                            <select id="service">
+
+                                <option value="">
+                                    Select service
+                                </option>
+
+                                <option>
+                                    General Contracting
+                                </option>
+
+                                <option>
+                                    Construction Services
+                                </option>
+
+                                <option>
+                                    Project Planning
+                                </option>
+
+                                <option>
+                                    Maintenance & Repair
+                                </option>
+
+                                <option>
+                                    Civil Works
+                                </option>
+
+                                <option>
+                                    Contract Management
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Message *
+                        </label>
+
+                        <textarea
+                            id="message"
+                            placeholder="Tell us about your project..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-dark"
+                    >
+                        Send Message →
+                    </button>
+
+
+                    <div
+                        class="form-message"
+                        id="formMessage"
+                    ></div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+
+            <div class="footer-about">
+
+                <div class="logo footer-logo">
+
+                    <div class="logo-icon">
+                        A&N
+                    </div>
+
+                    <div class="logo-text">
+
+                        <strong style="color:white;">
+                            A&N Contractors
+                        </strong>
+
+                        <span style="color:rgba(255,255,255,0.5);">
+                            Private Limited
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <p>
+                    Professional contracting and construction
+                    solutions based in Lahore, Pakistan.
+                </p>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3>
+                    Company
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#about">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3>
+                    Services
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#services">
+                            General Contracting
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Construction
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Civil Works
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Maintenance
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#contact">
+                            Lahore, Pakistan
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:info@ancontractors.com">
+                            Email Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Get a Consultation
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <span>
+                © <span id="year"></span>
+                A&N Contractors Private Limited.
+                All Rights Reserved.
+            </span>
+
+            <span>
+                Lahore, Pakistan
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         WHATSAPP
+    ====================================================== -->
+
+    <!-- Replace 923XXXXXXXXX with the company's actual
+         WhatsApp number -->
+
+    <a
+        href="https://wa.me/923XXXXXXXXX"
+        class="whatsapp"
+        target="_blank"
+        aria-label="WhatsApp"
+    >
+        ☎
+    </a>
+
+
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+    <button
+        class="back-top"
+        id="backTop"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* =====================================================
+           MOBILE MENU
+        ===================================================== */
+
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
+
+        menuBtn.addEventListener("click", function () {
+
+            navLinks.classList.toggle("active");
+
+            if (navLinks.classList.contains("active")) {
+                menuBtn.innerHTML = "✕";
+            } else {
+                menuBtn.innerHTML = "☰";
+            }
+
+        });
+
+
+        /* Close mobile menu after clicking a link */
+
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                navLinks.classList.remove("active");
+
+                menuBtn.innerHTML = "☰";
+
+            });
+
+        });
+
+
+        /* =====================================================
+           FAQ ACCORDION
+        ===================================================== */
+
+        const faqQuestions =
+            document.querySelectorAll(".faq-question");
+
+        faqQuestions.forEach(function (question) {
+
+            question.addEventListener("click", function () {
+
+                const currentItem =
+                    question.parentElement;
+
+                document
+                    .querySelectorAll(".faq-item")
+                    .forEach(function (item) {
+
+                        if (item !== currentItem) {
+                            item.classList.remove("active");
+                        }
+
+                    });
+
+                currentItem.classList.toggle("active");
+
+            });
+
+        });
+
+
+        /* =====================================================
+           SCROLL REVEAL
+        ===================================================== */
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+        const revealObserver =
+            new IntersectionObserver(
+
+                function (entries, observer) {
+
+                    entries.forEach(function (entry) {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("visible");
+
+                            observer.unobserve(entry.target);
+
+                        }
+
+                    });
+
+                },
+
+                {
+                    threshold: 0.12
+                }
+
+            );
+
+
+        revealElements.forEach(function (element) {
+
+            revealObserver.observe(element);
+
+        });
+
+
+        /* =====================================================
+           STAT COUNTERS
+        ===================================================== */
+
+        const counters =
+            document.querySelectorAll(".stat-number");
+
+        let countersStarted = false;
+
+        function startCounters() {
+
+            if (countersStarted) return;
+
+            countersStarted = true;
+
+            counters.forEach(function (counter) {
+
+                const target =
+                    parseInt(counter.getAttribute("data-target"));
+
+                let current = 0;
+
+                const increment =
+                    Math.max(1, Math.ceil(target / 50));
+
+                const timer =
+                    setInterval(function () {
+
+                        current += increment;
+
+                        if (current >= target) {
+
+                            current = target;
+
+                            clearInterval(timer);
+
+                        }
+
+                        counter.textContent = current;
+
+                    }, 35);
+
+            });
+
+        }
+
+
+        const statsSection =
+            document.querySelector(".stats");
+
+        const statsObserver =
+            new IntersectionObserver(
+
+                function (entries) {
+
+                    if (entries[0].isIntersecting) {
+
+                        startCounters();
+
+                    }
+
+                },
+
+                {
+                    threshold: 0.4
+                }
+
+            );
+
+        statsObserver.observe(statsSection);
+
+
+        /* =====================================================
+           CONTACT FORM
+        ===================================================== */
+
+        const contactForm =
+            document.getElementById("contactForm");
+
+        const formMessage =
+            document.getElementById("formMessage");
+
+
+        contactForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+
+            const name =
+                document.getElementById("name").value.trim();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const message =
+                document.getElementById("message").value.trim();
+
+
+            if (name === "" ||
+                email === "" ||
+                message === "") {
+
+                formMessage.style.display = "block";
+
+                formMessage.style.color = "#d32f2f";
+
+                formMessage.textContent =
+                    "Please fill in all required fields.";
+
+                return;
+
+            }
+
+
+            /* Basic email validation */
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+            if (!emailPattern.test(email)) {
+
+                formMessage.style.display = "block";
+
+                formMessage.style.color = "#d32f2f";
+
+                formMessage.textContent =
+                    "Please enter a valid email address.";
+
+                return;
+
+            }
+
+
+            /*
+                Front-end confirmation.
+
+                For real email delivery, connect this form
+                to your backend, Formspree, EmailJS, PHP,
+                or another form service.
+            */
+
+            formMessage.style.display = "block";
+
+            formMessage.style.color = "#17833b";
+
+            formMessage.textContent =
+                "Thank you! Your message has been prepared successfully.";
+
+            contactForm.reset();
+
+        });
+
+
+        /* =====================================================
+           BACK TO TOP
+        ===================================================== */
+
+        const backTop =
+            document.getElementById("backTop");
+
+
+        window.addEventListener("scroll", function () {
+
+            if (window.scrollY > 500) {
+
+                backTop.classList.add("show");
+
+            } else {
+
+                backTop.classList.remove("show");
+
+            }
+
+        });
+
+
+        backTop.addEventListener("click", function () {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        });
+
+
+        /* =====================================================
+           CURRENT YEAR
+        ===================================================== */
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        /* =====================================================
+           PREVENT EMPTY # LINKS
+        ===================================================== */
+
+        document.querySelectorAll('a[href="#"]').forEach(function (link) {
+
+            link.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
